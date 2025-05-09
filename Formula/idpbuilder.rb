@@ -5,20 +5,20 @@
 class Idpbuilder < Formula
   desc ""
   homepage "https://cnoe.io"
-  version "0.10.0-nightly.20250508"
+  version "0.10.0-nightly.20250509"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.0-nightly.20250508/idpbuilder-darwin-amd64.tar.gz"
-      sha256 "0461d42efe5be1cf081bed9c6e2c419a55349d3fce41cb58e898315679d95868"
+      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.0-nightly.20250509/idpbuilder-darwin-amd64.tar.gz"
+      sha256 "27f000155dcc66e5fefa57010cd06e23d6e274d41db7a2ff2421a12b8a20f982"
 
       def install
         bin.install "idpbuilder"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.0-nightly.20250508/idpbuilder-darwin-arm64.tar.gz"
-      sha256 "222aaf3ebc0d2edc3b1d53c4bb489296bbf69eb470f7ce17f7ec7a799ce80e38"
+      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.0-nightly.20250509/idpbuilder-darwin-arm64.tar.gz"
+      sha256 "aaf9115b5033b2a32517c2335e019296199727a797ab83ba7d297df2d7871cba"
 
       def install
         bin.install "idpbuilder"
@@ -28,15 +28,15 @@ class Idpbuilder < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.0-nightly.20250508/idpbuilder-linux-amd64.tar.gz"
-      sha256 "665385414bc55b3e3fb4d24a8ee7d092c22fbd0bf30008ae2380043f55bf66d5"
+      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.0-nightly.20250509/idpbuilder-linux-amd64.tar.gz"
+      sha256 "f8984928e055aa3d1374d437235e0071f09b3885fef555fc5b6c2f7eb8775245"
       def install
         bin.install "idpbuilder"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.0-nightly.20250508/idpbuilder-linux-arm64.tar.gz"
-      sha256 "1ffe7f39aafa33ee9598607421e1158fa23575515c20f68c9cf4302ecc7e7a71"
+      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.0-nightly.20250509/idpbuilder-linux-arm64.tar.gz"
+      sha256 "059c89e779cad4907628f45cb7865b4dde2544990ca28c6cacc4a2a58d391a9a"
       def install
         bin.install "idpbuilder"
       end
