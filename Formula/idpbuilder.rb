@@ -5,20 +5,20 @@
 class Idpbuilder < Formula
   desc ""
   homepage "https://cnoe.io"
-  version "0.10.0"
+  version "0.10.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.0/idpbuilder-darwin-amd64.tar.gz"
-      sha256 "d8cf6a71a50715f1dffa4c2df5df9e1b954ee9077c5dbd1cf0d8ea2b85753e6d"
+      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.1/idpbuilder-darwin-amd64.tar.gz"
+      sha256 "06ca084d087cf11e40fd7bfc957423137bf4a671fd0ce3eba0b52ed0247ca5b8"
 
       def install
         bin.install "idpbuilder"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.0/idpbuilder-darwin-arm64.tar.gz"
-      sha256 "03f93bfbad60807d8784d2bcc0e6bde8395ef2bd8c1c7362a50c74623756c040"
+      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.1/idpbuilder-darwin-arm64.tar.gz"
+      sha256 "c6a6059323144486b000bbafc4fefe2f1ad4e402f7645688509c9d6842542fd2"
 
       def install
         bin.install "idpbuilder"
@@ -28,15 +28,15 @@ class Idpbuilder < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.0/idpbuilder-linux-amd64.tar.gz"
-      sha256 "644e4072d9ab566a49cda2fba7f32c02a16380774792922da50ed698430237bb"
+      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.1/idpbuilder-linux-amd64.tar.gz"
+      sha256 "59df8636865f5664b7f06764ce8cfda9408c4639b635cac2fcec6f90d73730f0"
       def install
         bin.install "idpbuilder"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.0/idpbuilder-linux-arm64.tar.gz"
-      sha256 "35a76c575db7fc810c6577e3f16f687705296ac73928931fbd74ada39dffd391"
+      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.1/idpbuilder-linux-arm64.tar.gz"
+      sha256 "ca58e443184af4974312ae74846665f19c03ea5684d0ede162a8ee74a7162885"
       def install
         bin.install "idpbuilder"
       end
