@@ -5,39 +5,39 @@
 class Idpbuilder < Formula
   desc ""
   homepage "https://cnoe.io"
-  version "0.10.1"
+  version "0.10.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.1/idpbuilder-darwin-amd64.tar.gz"
-      sha256 "06ca084d087cf11e40fd7bfc957423137bf4a671fd0ce3eba0b52ed0247ca5b8"
+      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.2/idpbuilder-darwin-amd64.tar.gz"
+      sha256 "00893be588946de35d5cf7b47a42c275f3b135ed4f3b25dded052ceb8b159821"
 
-      def install
+      define_method(:install) do
         bin.install "idpbuilder"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.1/idpbuilder-darwin-arm64.tar.gz"
-      sha256 "c6a6059323144486b000bbafc4fefe2f1ad4e402f7645688509c9d6842542fd2"
+      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.2/idpbuilder-darwin-arm64.tar.gz"
+      sha256 "74ffb84982128f2d4d7ae3394f2c828680f96f6ade27ce9611e301fc91efa097"
 
-      def install
+      define_method(:install) do
         bin.install "idpbuilder"
       end
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.1/idpbuilder-linux-amd64.tar.gz"
-      sha256 "59df8636865f5664b7f06764ce8cfda9408c4639b635cac2fcec6f90d73730f0"
-      def install
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.2/idpbuilder-linux-amd64.tar.gz"
+      sha256 "d679cfc14f7a612e517730313952d4c349b8dab03589fa467698fc70a993d5cc"
+      define_method(:install) do
         bin.install "idpbuilder"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.1/idpbuilder-linux-arm64.tar.gz"
-      sha256 "ca58e443184af4974312ae74846665f19c03ea5684d0ede162a8ee74a7162885"
-      def install
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/cnoe-io/idpbuilder/releases/download/v0.10.2/idpbuilder-linux-arm64.tar.gz"
+      sha256 "f381a25b02530915c17ca4a765b226090bb51268deddca6eefc2bd7f8adfca33"
+      define_method(:install) do
         bin.install "idpbuilder"
       end
     end
